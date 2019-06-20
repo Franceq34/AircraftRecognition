@@ -2,49 +2,59 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlanesSpawn : MonoBehaviour {
-
-    private Vector3 spawnPos;
-    private Quaternion spawnRot;
-    public Rigidbody rb;
+    
+    public Transform player;
+    private Rigidbody rb;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        spawnPos = rb.position;
-        spawnRot = rb.rotation;
     }
 
     // Use this for initialization
     void Start ()
     {
-        StartCoroutine(ReplacePlane());
+        ReplacePlane();
     }
 
     // Update is called once per frame
     void Update () {
-		
-	}
-
-    IEnumerator ReplacePlane()
-    {
-        while(true)
+        transform.position += transform.forward * Time.deltaTime * Settings.Instance.speed;
+        if (Input.GetKeyDown(KeyCode.Keypad1))
         {
-            Debug.Log("ReplacePlane");
-
-            rb.transform.position = RandomPointOnCircleEdge(100);
-            Debug.Log("x" + rb.transform.position.x);
-            Debug.Log("y" + rb.transform.position.y);
-
-            yield return new WaitForSeconds(7);
+            ReplacePlane();
+        }
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene("main");
         }
 
     }
 
-    private Vector3 RandomPointOnCircleEdge(float radius)
+    void ReplacePlane()
     {
-        var vector2 = UnityEngine.Random.insideUnitCircle.normalized * radius;
-        return new Vector3(vector2.x + 350, 300, vector2.y + 300);
+        //SET POSITION
+        Vector3 pos = UnityEngine.Random.insideUnitCircle * 6000;
+        Vector3 poscentered = new Vector3(pos.x + 350, Settings.Instance.altitude, pos.y + 300);
+        rb.transform.position = poscentered;
+        //SET ROTATION
+        Vector3 direction = player.position - transform.position;
+        direction = AlterDirection(direction);
+        Quaternion rotation = Quaternion.LookRotation(direction);
+        rotation.x = 0;
+        rotation.z = 0;
+        rb.transform.rotation = rotation;
+    }
+
+    private Vector3 AlterDirection(Vector3 direction)
+    {
+        var max = Settings.Instance.closeness;
+        direction.x = direction.x + UnityEngine.Random.Range(-max, max);
+        direction.z = direction.z + UnityEngine.Random.Range(-max, max);
+        return direction;
     }
 }
