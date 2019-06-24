@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 1fb88f2fb151c85409f274d0a59a50bd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: AM84_016_15
+    100002: AM84_016_16
+    100004: AM84_016_17
+    100006: AM84_016_18
+    100008: AM84_016_19
+    100010: Group001
+    100012: //RootNode
+    100014: object00
+    100016: object01
+    100018: object02
+    100020: object03
+    100022: object04
+    100024: object05
+    100026: object06
+    100028: object07
+    100030: object08
+    100032: object09
+    100034: object10
+    100036: object11
+    100038: object12
+    100040: object13
+    100042: object14
+    100044: object15
+    100046: Viewport_Camera
+    400000: AM84_016_15
+    400002: AM84_016_16
+    400004: AM84_016_17
+    400006: AM84_016_18
+    400008: AM84_016_19
+    400010: Group001
+    400012: //RootNode
+    400014: object00
+    400016: object01
+    400018: object02
+    400020: object03
+    400022: object04
+    400024: object05
+    400026: object06
+    400028: object07
+    400030: object08
+    400032: object09
+    400034: object10
+    400036: object11
+    400038: object12
+    400040: object13
+    400042: object14
+    400044: object15
+    400046: Viewport_Camera
+    2000000: Viewport_Camera
+    2100000: MIG29_Engine
+    2100002: Mig29_Glass
+    2100004: 001
+    2100006: MIG29_suspantion
+    2100008: Material
+    2100010: MIG29_Hrom
+    2100012: 002
+    2100014: MIG29_Tire
+    2100016: MIG29_rim
+    2300000: object00
+    2300002: object01
+    2300004: object02
+    2300006: object03
+    2300008: object04
+    2300010: object05
+    2300012: object06
+    2300014: object07
+    2300016: object08
+    2300018: object09
+    2300020: object10
+    2300022: object11
+    2300024: object12
+    2300026: object13
+    2300028: object14
+    2300030: object15
+    3300000: object00
+    3300002: object01
+    3300004: object02
+    3300006: object03
+    3300008: object04
+    3300010: object05
+    3300012: object06
+    3300014: object07
+    3300016: object08
+    3300018: object09
+    3300020: object10
+    3300022: object11
+    3300024: object12
+    3300026: object13
+    3300028: object14
+    3300030: object15
+    4300000: object00
+    4300002: object01
+    4300004: object02
+    4300006: object03
+    4300008: object04
+    4300010: object05
+    4300012: object06
+    4300014: object07
+    4300016: object08
+    4300018: object13
+    4300020: object15
+    4300022: object09
+    4300024: object10
+    4300026: object11
+    4300028: object12
+    4300030: object14
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 001
+    second: {fileID: 2100000, guid: a160274c2b37f484185530a23d76563d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 002
+    second: {fileID: 2100000, guid: 8de0921c7a5bee84abaec978ad00b963, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MIG29_Engine
+    second: {fileID: 2100000, guid: cf1c0810acd122044b9baeab74517ab1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MIG29_Hrom
+    second: {fileID: 2100000, guid: 8f8c6023a25eb5d4c9034d9d4a97d5a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MIG29_Tire
+    second: {fileID: 2100000, guid: a4e633579ba168448b02b54a6ad100c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MIG29_rim
+    second: {fileID: 2100000, guid: 1132c63460813d846a09edd7e3a1e80c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MIG29_suspantion
+    second: {fileID: 2100000, guid: 9eed82f48beedfa40bdecfd8f103c121, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: fe5e2a948424f6648971f4bf7d591dff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mig29_Glass
+    second: {fileID: 2100000, guid: f682fcf68558c2249b0587077b283ed4, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
