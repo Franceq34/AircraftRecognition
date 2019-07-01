@@ -26,7 +26,7 @@ public class Spawner : MonoBehaviour {
             randPlane = Random.Range(0, planes.Length);
             //SET POSITION
             Vector3 pos = UnityEngine.Random.insideUnitCircle * 6000;
-            Vector3 poscentered = new Vector3(pos.x + 350, Settings.Instance.altitude, pos.y + 300);
+            Vector3 poscentered = new Vector3(pos.x + 350, Settings.Instance.altitude + Settings.Instance.mapSelected.altitude, pos.y + 300);
 
             //SET ROTATION
             Vector3 direction = transform.position - poscentered;
